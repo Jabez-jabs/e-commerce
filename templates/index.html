@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Mini | Smart Shopping</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <h1>🛍️ Flipkart Mini</h1>
+            <span class="tagline">Dynamic | Semantic | Smart</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by name, brand, category...">
+            <button id="searchBtn">🔍 Search</button>
+        </div>
+    </header>
+
+    <div class="filter-sort-bar">
+        <div class="filters">
+            <label>Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Books">Books</option>
+                <option value="Clothing">Clothing</option>
+            </select>
+        </div>
+        <div class="sorting">
+            <label>Sort by:</label>
+            <select id="sortBy">
+                <option value="default">Relevance</option>
+                <option value="price_asc">Price: Low to High</option>
+                <option value="price_desc">Price: High to Low</option>
+                <option value="rating_desc">Top Rated</option>
+                <option value="popularity">Most Viewed</option>
+            </select>
+        </div>
+        <div class="reset-btn">
+            <button id="resetBtn">⟳ Reset</button>
+        </div>
+    </div>
+
+    <main>
+        <div id="productsContainer" class="product-grid"></div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
